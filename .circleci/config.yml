@@ -71,6 +71,7 @@ jobs:
           <<: *basic_docker_build
       - run:
           ss -plantu
+          echo "hello world"
       - run: |
           echo $SLEEP
           date
