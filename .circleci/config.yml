@@ -69,6 +69,8 @@ jobs:
     steps:
       - run:
           <<: *basic_docker_build
+      - run:
+          ss -plantu
       - run: |
           echo $SLEEP
           date
