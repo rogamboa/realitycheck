@@ -69,7 +69,7 @@ jobs:
     steps:
       - run:
           <<: *basic_docker_build
-      - run:
+      - run: |
           ss -plantu
           echo "hello world"
       - run: |
